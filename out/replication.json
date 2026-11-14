@@ -10,8 +10,8 @@
   "sources": 59,
   "undated": 31,
   "at_publication": {
-   "reproduced": 317,
-   "close": 42,
+   "reproduced": 316,
+   "close": 43,
    "not reproduced": 8
   },
   "at_snapshot": {
@@ -68,7 +68,7 @@
    "max": 128,
    "median": 60,
    "spread_pct_of_median": 140.0,
-   "reproduced_at_publication": 4,
+   "reproduced_at_publication": 5,
    "reproduced_at_snapshot": 1
   },
   "intents_volume_30d_vs_prev": {
@@ -88,7 +88,7 @@
    "max": 6260000,
    "median": 5830000,
    "spread_pct_of_median": 13.749879931389367,
-   "reproduced_at_publication": 9,
+   "reproduced_at_publication": 8,
    "reproduced_at_snapshot": 9
   },
   "intents_fees_annualized": {
@@ -248,7 +248,7 @@
    "max": 48,
    "median": 45.45,
    "spread_pct_of_median": 35.2035203520352,
-   "reproduced_at_publication": 6,
+   "reproduced_at_publication": 5,
    "reproduced_at_snapshot": 4
   },
   "revenue_over_l1_fees": {
@@ -268,7 +268,7 @@
    "max": 73.9,
    "median": 63.745000000000005,
    "spread_pct_of_median": 26.511883284963535,
-   "reproduced_at_publication": 4,
+   "reproduced_at_publication": 5,
    "reproduced_at_snapshot": 4
   },
   "mcap_over_revenue": {
@@ -358,7 +358,7 @@
    "max": 190000,
    "median": 134123.0,
    "spread_pct_of_median": 45.107848765685226,
-   "reproduced_at_publication": 6,
+   "reproduced_at_publication": 5,
    "reproduced_at_snapshot": 5
   },
   "l1_fees_usd_yoy": {
@@ -4480,11 +4480,11 @@
    "url": "https://github.com/Julianf6at/headroom/blob/e1326dc5ac23179ca03b884a67dfd9a3962e1b88/README.md",
    "at_publication": {
     "metric": "burn70_cover_of_gross_issuance_pct_90d",
-    "ours": 0.8463925925245974,
-    "gap": 0.08990043814559422,
+    "ours": 0.8502906161744684,
+    "gap": 0.08570901486616302,
     "status": "close",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "burn70_cover_of_gross_issuance_pct_90d",
@@ -4655,11 +4655,11 @@
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
     "metric": "intents_volume_30d",
-    "ours": 3774153452.0,
-    "gap": 0.006801723157894737,
+    "ours": 3797462047.0,
+    "gap": 0.0006678823684210526,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_volume_30d",
@@ -4680,11 +4680,11 @@
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
     "metric": "intents_volume_yoy_30d",
-    "ours": 47.88268142343433,
-    "gap": 0.08824275962350744,
-    "status": "close",
+    "ours": 43.76842582102676,
+    "gap": 0.00526304952211909,
+    "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_volume_yoy_30d",
@@ -4705,11 +4705,11 @@
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
     "metric": "tx_yoy_30d",
-    "ours": -84.76440429768097,
-    "gap": 0.002771714144929781,
+    "ours": -84.51316414142981,
+    "gap": 0.00572748068906104,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "tx_yoy_30d",
@@ -4730,11 +4730,11 @@
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
     "metric": "active_accounts_yoy_90d",
-    "ours": -75.1911593708275,
-    "gap": 0.0025487916110334178,
+    "ours": -75.08455536097544,
+    "gap": 0.00112740481300591,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "active_accounts_yoy_90d",
@@ -4755,11 +4755,11 @@
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
     "metric": "active_accounts_per_day_30d",
-    "ours": 63922.63333333333,
-    "gap": 0.013539609053497973,
+    "ours": 64821.96666666667,
+    "gap": 0.00033899176954733256,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "active_accounts_per_day_30d",
@@ -4780,11 +4780,11 @@
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
     "metric": "intents_volume_365d",
-    "ours": 32927090833.0,
-    "gap": 0.002209368696969697,
+    "ours": 32969281080.0,
+    "gap": 0.0009308763636363636,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_volume_365d",
@@ -4805,11 +4805,11 @@
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
     "metric": "intents_fees_30d",
-    "ours": 6048207.0,
-    "gap": 0.037428301886792456,
-    "status": "reproduced",
+    "ours": 6266705.0,
+    "gap": 0.07490651801029159,
+    "status": "close",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_fees_30d",
@@ -4829,12 +4829,12 @@
    "published_commit": "1a81b3efdb8757551e834cfbaca0ef2cf3358591",
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
-    "metric": "intents_fees_over_l1_fees_30d",
-    "ours": 46.00227770358125,
-    "gap": 0.022272837857361102,
-    "status": "reproduced",
+    "metric": "intents_fees_over_l1_fees_365d",
+    "ours": 47.32547723238353,
+    "gap": 0.05167727183074504,
+    "status": "close",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_fees_over_l1_fees_30d",
@@ -4855,11 +4855,11 @@
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
     "metric": "l1_fees_usd_30d",
-    "ours": 131476.25078419,
-    "gap": 0.015260623816138944,
+    "ours": 129332.11130851,
+    "gap": 0.0012964377721236043,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "l1_fees_usd_30d",
@@ -4880,11 +4880,11 @@
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
     "metric": "intents_take_rate_bps_90d",
-    "ours": 15.600569600750099,
-    "gap": 0.013024000048707683,
+    "ours": 15.76536913119479,
+    "gap": 0.023725268259401917,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_take_rate_bps_90d",
@@ -4905,11 +4905,11 @@
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
     "metric": "intents_capture_share_30d",
-    "ours": 30.466020756234037,
-    "gap": 0.01722513689567621,
-    "status": "reproduced",
+    "ours": 28.757233665857896,
+    "gap": 0.07234730110135819,
+    "status": "close",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_capture_share_30d",
@@ -4930,11 +4930,11 @@
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
     "metric": "intents_revenue_annualized_90d",
-    "ours": 21077334.611111112,
-    "gap": 0.005786103249475852,
+    "ours": 21219262.833333332,
+    "gap": 0.0009086242138364194,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_revenue_annualized_90d",
@@ -4955,11 +4955,11 @@
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
     "metric": "intents_revenue_365d",
-    "ours": 9502663.05,
-    "gap": 0.010921601063829866,
+    "ours": 9393543.05,
+    "gap": 0.0006869095744680058,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_revenue_365d",
@@ -4980,11 +4980,11 @@
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
     "metric": "usage_cover_of_gross_issuance_pct_90d",
-    "ours": 19.95965014175822,
-    "gap": 0.018349497028480592,
+    "ours": 20.078777436245556,
+    "gap": 0.024427420216609916,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "usage_cover_of_gross_issuance_pct_90d",
@@ -5005,11 +5005,11 @@
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
     "metric": "revenue_cover_of_gross_issuance_pct_365d",
-    "ours": 12.982253093329504,
-    "gap": 0.49221299923327644,
+    "ours": 12.83709402918764,
+    "gap": 0.47552804933191267,
     "status": "not reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "revenue_cover_of_gross_issuance_pct_365d",
@@ -5030,11 +5030,11 @@
    "url": "https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md",
    "at_publication": {
     "metric": "revenue_yield_on_mcap_pct_30d",
-    "ours": 0.47678934517904803,
-    "gap": 0.014445415274570333,
+    "ours": 0.48894104364752355,
+    "gap": 0.04030009286707145,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "revenue_yield_on_mcap_pct_30d",
@@ -7705,11 +7705,11 @@
    "url": "https://github.com/Eloneshj/stakeout/blob/a0ceae03c755cd89d3f9f11ebc236514903a7efb/README.md",
    "at_publication": {
     "metric": "staked_share_pct",
-    "ours": 44.95254392153723,
-    "gap": 0.014730111095648538,
+    "ours": 44.964885399614275,
+    "gap": 0.015008699765559316,
     "status": "reproduced",
     "dated": false,
-    "asof": "snapshot 2026-11-13"
+    "asof": "snapshot 2026-11-14"
    },
    "at_snapshot": {
     "metric": "staked_share_pct",
@@ -7730,11 +7730,11 @@
    "url": "https://github.com/Eloneshj/stakeout/blob/a0ceae03c755cd89d3f9f11ebc236514903a7efb/README.md",
    "at_publication": {
     "metric": "validators_current",
-    "ours": 356,
-    "gap": 0.05325443786982249,
+    "ours": 355,
+    "gap": 0.05029585798816568,
     "status": "close",
     "dated": false,
-    "asof": "snapshot 2026-11-13"
+    "asof": "snapshot 2026-11-14"
    },
    "at_snapshot": {
     "metric": "validators_current",
@@ -7755,11 +7755,11 @@
    "url": "https://github.com/Eloneshj/stakeout/blob/a0ceae03c755cd89d3f9f11ebc236514903a7efb/THESIS.md",
    "at_publication": {
     "metric": "l1_fees_usd_30d",
-    "ours": 131476.25078419,
-    "gap": 0.04031933734167888,
-    "status": "reproduced",
+    "ours": 129332.11130851,
+    "gap": 0.05596999044883216,
+    "status": "close",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "l1_fees_usd_30d",
@@ -7780,11 +7780,11 @@
    "url": "https://github.com/Eloneshj/stakeout/blob/a0ceae03c755cd89d3f9f11ebc236514903a7efb/THESIS.md",
    "at_publication": {
     "metric": "intents_volume_30d",
-    "ours": 3774153452.0,
-    "gap": 0.0037642159574468085,
+    "ours": 3797462047.0,
+    "gap": 0.009963310372340425,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_volume_30d",
@@ -7980,11 +7980,11 @@
    "url": "https://github.com/clatsonhacks/near-moat-map/blob/f647b413c6218fa3e6133b4eef22ef663cb66b77/README.md",
    "at_publication": {
     "metric": "revenue_yield_on_mcap_pct_30d",
-    "ours": 0.47678934517904803,
-    "gap": 0.006688864210316568,
+    "ours": 0.48894104364752355,
+    "gap": 0.01862717426567411,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "revenue_yield_on_mcap_pct_30d",
@@ -8005,11 +8005,11 @@
    "url": "https://github.com/clatsonhacks/near-moat-map/blob/f647b413c6218fa3e6133b4eef22ef663cb66b77/THESIS.md",
    "at_publication": {
     "metric": "intents_capture_share_90d",
-    "ours": 27.210424080227213,
-    "gap": 0.007793484452859743,
+    "ours": 26.807331865700473,
+    "gap": 0.00713585682590842,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_capture_share_90d",
@@ -8030,11 +8030,11 @@
    "url": "https://github.com/clatsonhacks/near-moat-map/blob/f647b413c6218fa3e6133b4eef22ef663cb66b77/THESIS.md",
    "at_publication": {
     "metric": "intents_take_rate_bps_90d",
-    "ours": 15.600569600750099,
-    "gap": 3.651286859609243e-05,
+    "ours": 15.76536913119479,
+    "gap": 0.010600585332999376,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_take_rate_bps_90d",
@@ -8055,11 +8055,11 @@
    "url": "https://github.com/clatsonhacks/near-moat-map/blob/f647b413c6218fa3e6133b4eef22ef663cb66b77/THESIS.md",
    "at_publication": {
     "metric": "intents_revenue_annualized_90d",
-    "ours": 21077334.611111112,
-    "gap": 0.0010741890468667329,
+    "ours": 21219262.833333332,
+    "gap": 0.005652266982622374,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_revenue_annualized_90d",
@@ -8080,11 +8080,11 @@
    "url": "https://github.com/clatsonhacks/near-moat-map/blob/f647b413c6218fa3e6133b4eef22ef663cb66b77/THESIS.md",
    "at_publication": {
     "metric": "mcap_over_intents_revenue_annualized_30d",
-    "ours": 209.73623049912564,
-    "gap": 0.0035226339671083225,
+    "ours": 204.52363592549978,
+    "gap": 0.021418009925838397,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_revenue_annualized_30d",
@@ -8105,11 +8105,11 @@
    "url": "https://github.com/clatsonhacks/near-moat-map/blob/f647b413c6218fa3e6133b4eef22ef663cb66b77/THESIS.md",
    "at_publication": {
     "metric": "mcap_over_intents_fees_annualized_30d",
-    "ours": 63.89828351720648,
-    "gap": 0.1210225178457277,
-    "status": "close",
+    "ours": 58.815339885004455,
+    "gap": 0.0318480681579729,
+    "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_fees_annualized_30d",
@@ -8129,12 +8129,12 @@
    "published_commit": "d7735490eb70345ea49b42090b89deee9103ea81",
    "url": "https://github.com/clatsonhacks/near-moat-map/blob/f647b413c6218fa3e6133b4eef22ef663cb66b77/THESIS.md",
    "at_publication": {
-    "metric": "net_inflation_annual_pct_90d",
-    "ours": 2.472571812699009,
-    "gap": 0.009212984775105572,
+    "metric": "net_inflation_annual_pct_30d",
+    "ours": 2.4565476187688904,
+    "gap": 0.00267249745668988,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "net_inflation_annual_pct_90d",
@@ -8155,11 +8155,11 @@
    "url": "https://github.com/clatsonhacks/near-moat-map/blob/f647b413c6218fa3e6133b4eef22ef663cb66b77/THESIS.md",
    "at_publication": {
     "metric": "breakeven_multiple_90d",
-    "ours": 5.010107857090482,
-    "gap": 0.017625910374415268,
+    "ours": 4.980382910140896,
+    "gap": 0.02345433134492236,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "breakeven_multiple_90d",
@@ -8180,11 +8180,11 @@
    "url": "https://github.com/clatsonhacks/near-moat-map/blob/f647b413c6218fa3e6133b4eef22ef663cb66b77/THESIS.md",
    "at_publication": {
     "metric": "revenue_cover_of_net_issuance_pct_90d",
-    "ours": 18.98359518169019,
-    "gap": 0.0008634114899899415,
+    "ours": 19.09964819822658,
+    "gap": 0.005244642011925181,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "revenue_cover_of_net_issuance_pct_90d",
@@ -8530,11 +8530,11 @@
    "url": "https://github.com/ervhint/tideline-thesis/blob/35090250f484baeef88e43f2a34bcfd96e285116/THESIS.md",
    "at_publication": {
     "metric": "intents_capture_share_30d",
-    "ours": 30.466020756234037,
-    "gap": 0.05055243987013922,
-    "status": "close",
+    "ours": 28.757233665857896,
+    "gap": 0.008371252901451855,
+    "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_capture_share_30d",
@@ -8555,11 +8555,11 @@
    "url": "https://github.com/ervhint/tideline-thesis/blob/35090250f484baeef88e43f2a34bcfd96e285116/THESIS.md",
    "at_publication": {
     "metric": "breakeven_multiple_90d",
-    "ours": 5.010107857090482,
-    "gap": 0.02247099124295539,
+    "ours": 4.980382910140896,
+    "gap": 0.016404675538958215,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "breakeven_multiple_90d",
@@ -8580,11 +8580,11 @@
    "url": "https://github.com/fawazfff/near-retention-thesis/blob/837fefb3cd48cfedda038c31de573c0003990593/THESIS.md",
    "at_publication": {
     "metric": "intents_fees_365d",
-    "ours": 54123578.0,
-    "gap": 0.0003033247137052087,
+    "ours": 54333798.0,
+    "gap": 0.003579571481344662,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_fees_365d",
@@ -8605,11 +8605,11 @@
    "url": "https://github.com/fawazfff/near-retention-thesis/blob/837fefb3cd48cfedda038c31de573c0003990593/THESIS.md",
    "at_publication": {
     "metric": "intents_revenue_365d",
-    "ours": 9502663.05,
-    "gap": 0.014246571576763407,
+    "ours": 9393543.05,
+    "gap": 0.025566073651452206,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "intents_revenue_365d",
@@ -8980,11 +8980,11 @@
    "url": "https://github.com/ramaltman05-sudo/roll-call/blob/f67513143e745894a8082bb1439ea20bed3ff577/README.md",
    "at_publication": {
     "metric": "net_inflation_annual_pct_90d",
-    "ours": 2.472571812699009,
-    "gap": 0.001041219716197828,
+    "ours": 2.4704186145114546,
+    "gap": 0.0001694795592932867,
     "status": "reproduced",
     "dated": true,
-    "asof": "2026-11-12"
+    "asof": "2026-11-13"
    },
    "at_snapshot": {
     "metric": "net_inflation_annual_pct_90d",
