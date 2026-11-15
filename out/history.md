@@ -1,6 +1,6 @@
 # Snapshot history
 
-Raw snapshots committed: 4. THESIS.md is written from `2026-11-13`;
+Raw snapshots committed: 5. THESIS.md is written from `2026-11-13`;
 the conditions under which it is dropped are evaluated again on every later snapshot.
 
 | Snapshot | Data to | Intents volume 30 d | Fees 30 d | Captured 30 d | Cover of net issuance 90 d | Wallets / reported 90 d | Tx per day | Price | Kill conditions | Predictions |
@@ -9,6 +9,7 @@ the conditions under which it is dropped are evaluated again on every later snap
 | 2026-11-12 | 2026-11-11 | $3.731B | $5.782M | $1.803M | 18.3% | 0.98x | 663,839 | $3.58 | all 5 hold | P1 pending, P2 pending, P3 pending, P4 pending |
 | 2026-11-13 | 2026-11-12 | $3.774B | $6.048M | $1.843M | 18.6% | 0.98x | 669,188 | $3.59 | all 5 hold | P1 pending, P2 pending, P3 pending, P4 pending |
 | 2026-11-14 | 2026-11-13 | $3.797B | $6.267M | $1.802M | 18.7% | 0.98x | 678,139 | $3.42 | all 5 hold | P1 pending, P2 pending, P3 pending, P4 pending |
+| 2026-11-15 | 2026-11-14 | $3.851B | $6.527M | $1.710M | 18.9% | 0.98x | 677,546 | $3.45 | all 5 hold | P1 pending, P2 pending, P3 pending, P4 pending |
 
 ## Past values changed by the source between snapshots
 
@@ -25,3 +26,6 @@ Days present in both snapshots whose value differs. A thesis that quotes a 30-da
 | 2026-11-13 | 2026-11-14 | llama_intents_volume | 703 | 0 | $37.614B | $37.614B | none |
 | 2026-11-13 | 2026-11-14 | llama_intents_fees | 552 | 1 | $60.745M | $60.746M | 2026-11-12: 257,492 to 258,439 |
 | 2026-11-13 | 2026-11-14 | llama_intents_revenue | 552 | 2 | $9.926M | $9.922M | 2026-11-12: 99,349 to 95,771; 2026-11-11: 47,819 to 47,838 |
+| 2026-11-14 | 2026-11-15 | llama_intents_volume | 704 | 0 | $37.783B | $37.783B | none |
+| 2026-11-14 | 2026-11-15 | llama_intents_fees | 553 | 1 | $61.194M | $61.193M | 2026-11-13: 447,395 to 447,191 |
+| 2026-11-14 | 2026-11-15 | llama_intents_revenue | 553 | 1 | $9.968M | $9.970M | 2026-11-13: 45,778 to 47,338 |
