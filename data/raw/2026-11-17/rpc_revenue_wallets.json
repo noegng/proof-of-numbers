@@ -1,0 +1,272 @@
+[
+ {
+  "day": 1758585600,
+  "height": 165216249,
+  "wallets": {
+   "fefundsadmin.sputnik-dao.near": {
+    "near": "6000063769992204900000000",
+    "wnear": "0"
+   },
+   "1csfundsadmin.sputnik-dao.near": {
+    "near": null,
+    "wnear": "0"
+   },
+   "buybacks.multisignature.near": {
+    "near": null,
+    "wnear": "0"
+   }
+  }
+ },
+ {
+  "day": 1761177600,
+  "height": 169438010,
+  "wallets": {
+   "fefundsadmin.sputnik-dao.near": {
+    "near": "6000063769992204900000000",
+    "wnear": "0"
+   },
+   "1csfundsadmin.sputnik-dao.near": {
+    "near": "6000066260532140000000000",
+    "wnear": "0"
+   },
+   "buybacks.multisignature.near": {
+    "near": null,
+    "wnear": "0"
+   }
+  }
+ },
+ {
+  "day": 1763769600,
+  "height": 173647429,
+  "wallets": {
+   "fefundsadmin.sputnik-dao.near": {
+    "near": "319050161228759752823499999997",
+    "wnear": "0"
+   },
+   "1csfundsadmin.sputnik-dao.near": {
+    "near": "6000066260532140000000000",
+    "wnear": "0"
+   },
+   "buybacks.multisignature.near": {
+    "near": null,
+    "wnear": "0"
+   }
+  }
+ },
+ {
+  "day": 1766361600,
+  "height": 177842250,
+  "wallets": {
+   "fefundsadmin.sputnik-dao.near": {
+    "near": "427518101723918511474899999995",
+    "wnear": "0"
+   },
+   "1csfundsadmin.sputnik-dao.near": {
+    "near": "6000066260532140000000000",
+    "wnear": "0"
+   },
+   "buybacks.multisignature.near": {
+    "near": null,
+    "wnear": "0"
+   }
+  }
+ },
+ {
+  "day": 1768953600,
+  "height": 182032200,
+  "wallets": {
+   "fefundsadmin.sputnik-dao.near": {
+    "near": "634329826293553877536299999993",
+    "wnear": "0"
+   },
+   "1csfundsadmin.sputnik-dao.near": {
+    "near": "6000066260532140000000000",
+    "wnear": "0"
+   },
+   "buybacks.multisignature.near": {
+    "near": null,
+    "wnear": "0"
+   }
+  }
+ },
+ {
+  "day": 1771545600,
+  "height": 186297513,
+  "wallets": {
+   "fefundsadmin.sputnik-dao.near": {
+    "near": "924285595718898162638699999990",
+    "wnear": "0"
+   },
+   "1csfundsadmin.sputnik-dao.near": {
+    "near": "119426952119740546024627995972",
+    "wnear": "0"
+   },
+   "buybacks.multisignature.near": {
+    "near": null,
+    "wnear": "0"
+   }
+  }
+ },
+ {
+  "day": 1774137600,
+  "height": 190574631,
+  "wallets": {
+   "fefundsadmin.sputnik-dao.near": {
+    "near": "1068789013362485043906399999987",
+    "wnear": "0"
+   },
+   "1csfundsadmin.sputnik-dao.near": {
+    "near": "331432683904866527961748290167",
+    "wnear": "0"
+   },
+   "buybacks.multisignature.near": {
+    "near": "39998442762078857400000000",
+    "wnear": "0"
+   }
+  }
+ },
+ {
+  "day": 1776729600,
+  "height": 194892208,
+  "wallets": {
+   "fefundsadmin.sputnik-dao.near": {
+    "near": "1270362836891798142157799999985",
+    "wnear": "0"
+   },
+   "1csfundsadmin.sputnik-dao.near": {
+    "near": "533703701900332488930786466002",
+    "wnear": "0"
+   },
+   "buybacks.multisignature.near": {
+    "near": "39998442762078857400000000",
+    "wnear": "0"
+   }
+  }
+ },
+ {
+  "day": 1779321600,
+  "height": 199203580,
+  "wallets": {
+   "fefundsadmin.sputnik-dao.near": {
+    "near": "1319514986588495611488006307285",
+    "wnear": "0"
+   },
+   "1csfundsadmin.sputnik-dao.near": {
+    "near": "510072904032798053678585595843",
+    "wnear": "0"
+   },
+   "buybacks.multisignature.near": {
+    "near": "165852871013269278329637626051",
+    "wnear": "0"
+   }
+  }
+ },
+ {
+  "day": 1781913600,
+  "height": 203447295,
+  "wallets": {
+   "fefundsadmin.sputnik-dao.near": {
+    "near": "1428742746245697734618044133102",
+    "wnear": "0"
+   },
+   "1csfundsadmin.sputnik-dao.near": {
+    "near": "510072904032798053678585595843",
+    "wnear": "0"
+   },
+   "buybacks.multisignature.near": {
+    "near": "439778624643290989607508417705",
+    "wnear": "0"
+   }
+  }
+ },
+ {
+  "day": 1784505600,
+  "height": 207706090,
+  "wallets": {
+   "fefundsadmin.sputnik-dao.near": {
+    "near": "1487480792047922599568089842441",
+    "wnear": "0"
+   },
+   "1csfundsadmin.sputnik-dao.near": {
+    "near": "502798938526000132848385595843",
+    "wnear": "0"
+   },
+   "buybacks.multisignature.near": {
+    "near": "588278430301918723889771330158",
+    "wnear": "0"
+   }
+  }
+ },
+ {
+  "day": 1787097600,
+  "height": 211932555,
+  "wallets": {
+   "fefundsadmin.sputnik-dao.near": {
+    "near": "1570168451238939240812869234597",
+    "wnear": "0"
+   },
+   "1csfundsadmin.sputnik-dao.near": {
+    "near": "502798938526000132848385595843",
+    "wnear": "0"
+   },
+   "buybacks.multisignature.near": {
+    "near": "767992586658697583406343338735",
+    "wnear": "0"
+   }
+  }
+ },
+ {
+  "day": 1789689600,
+  "height": 216127116,
+  "wallets": {
+   "fefundsadmin.sputnik-dao.near": {
+    "near": "1734605631033886256810594925515",
+    "wnear": "0"
+   },
+   "1csfundsadmin.sputnik-dao.near": {
+    "near": "7669830931317123185595842",
+    "wnear": "0"
+   },
+   "buybacks.multisignature.near": {
+    "near": "1679822869557945097836828265220",
+    "wnear": "0"
+   }
+  }
+ },
+ {
+  "day": 1792281600,
+  "height": 220436710,
+  "wallets": {
+   "fefundsadmin.sputnik-dao.near": {
+    "near": "1910300817630168447464657518286",
+    "wnear": "0"
+   },
+   "1csfundsadmin.sputnik-dao.near": {
+    "near": "270875891412420848813311023",
+    "wnear": "0"
+   },
+   "buybacks.multisignature.near": {
+    "near": "2008453431590361180292424700134",
+    "wnear": "0"
+   }
+  }
+ },
+ {
+  "day": 1794873600,
+  "height": 224886599,
+  "wallets": {
+   "fefundsadmin.sputnik-dao.near": {
+    "near": "2025969546697699404967373056655",
+    "wnear": "0"
+   },
+   "1csfundsadmin.sputnik-dao.near": {
+    "near": "270875891412420848813311023",
+    "wnear": "0"
+   },
+   "buybacks.multisignature.near": {
+    "near": "2314166791908229974787976647137",
+    "wnear": "0"
+   }
+  }
+ }
+]
