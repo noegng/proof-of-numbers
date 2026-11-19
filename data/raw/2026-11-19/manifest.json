@@ -1,0 +1,76 @@
+{
+ "snapshot": "2026-11-19",
+ "fetched_at": "2026-11-19T22:35:35+00:00",
+ "files": {
+  "llama_intents_volume": {
+   "url": "https://api.llama.fi/summary/dexs/near-intents",
+   "sha256": "994484df426e145783544cb9d7db9be4dd5501bf98db3eb629c44ff4cc8a78b5",
+   "bytes": 51089
+  },
+  "llama_intents_fees": {
+   "url": "https://api.llama.fi/summary/fees/near-intents?dataType=dailyFees",
+   "sha256": "ce66f12681b831bdcfbc7b71ecc9a0edc734e33bbc4146e76655b46a29642f9d",
+   "bytes": 39534
+  },
+  "llama_intents_revenue": {
+   "url": "https://api.llama.fi/summary/fees/near-intents?dataType=dailyRevenue",
+   "sha256": "8ee83f1922b95db596fc4f4ea9512599ff73d389a4d6e0323cc91ff469e60e71",
+   "bytes": 37096
+  },
+  "llama_intents_holders_revenue": {
+   "url": "https://api.llama.fi/summary/fees/near-intents?dataType=dailyHoldersRevenue",
+   "sha256": "b62793b5f49f3b288b61f3c69d2b1ef575680d9c021f9636b3b45bad90d140ac",
+   "bytes": 36903
+  },
+  "llama_near_dexs": {
+   "url": "https://api.llama.fi/overview/dexs/near?excludeTotalDataChartBreakdown=true",
+   "sha256": "31a766612925dbfe7f42187e795d22287366471a1519e743cbbfd6f6e95f27b8",
+   "bytes": 55119
+  },
+  "nearblocks_charts": {
+   "url": "https://api.nearblocks.io/v1/charts",
+   "sha256": "67793e865a7f6c9d854de474768816ada91771946e7256ed6b4065d049e098ec",
+   "bytes": 1548065
+  },
+  "rpc_supply": {
+   "url": "https://archival-rpc.mainnet.fastnear.com",
+   "method": "block",
+   "note": "header.total_supply of the first block of each sampled UTC day",
+   "sha256": "2f7a3d14daf85417625b15642f32a3f97bbf01e80f039c26b736825990bcee01",
+   "bytes": 3000
+  },
+  "rpc_validators": {
+   "url": "https://rpc.mainnet.fastnear.com",
+   "body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "validators",
+    "params": [
+     null
+    ]
+   },
+   "sha256": "e3c3b9753e45ac65e599c33983c026977dd0def306e60321844a870d6873148b",
+   "bytes": 365888
+  },
+  "rpc_protocol_config": {
+   "url": "https://rpc.mainnet.fastnear.com",
+   "body": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "EXPERIMENTAL_protocol_config",
+    "params": {
+     "finality": "final"
+    }
+   },
+   "sha256": "27e5926843f8c4615abc45eb9459633eb4598710973c65fc169a35b8b78d0860",
+   "bytes": 9648
+  },
+  "rpc_revenue_wallets": {
+   "url": "https://archival-rpc.mainnet.fastnear.com",
+   "method": "query view_account + wrap.near ft_balance_of",
+   "note": "balances at the same blocks as rpc_supply",
+   "sha256": "32f6f6eb02ba378c6c8fb55dd67970ba70af779c81cedd91970c0480045a3122",
+   "bytes": 5621
+  }
+ }
+}
