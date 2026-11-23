@@ -28,27 +28,55 @@ YOCTO = 10**24
 
 
 def day_of(iso: str) -> int:
-    return int(datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(timezone.utc).timestamp()) // DAY * DAY
+    """Unix start of the UTC day of an ISO date or datetime; one without an offset is read as UTC."""
+    t = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+    if t.tzinfo is None:
+        t = t.replace(tzinfo=timezone.utc)
+    return int(t.timestamp()) // DAY * DAY
 
 
 def llama_series(doc: dict) -> dict[int, float]:
     return {int(t) // DAY * DAY: float(v) for t, v in doc["totalDataChart"]}
 
 
-def nearblocks_series(doc: dict) -> dict[str, dict[int, float]]:
-    """Daily chain statistics. txn_fee and total_supply arrive in yoctoNEAR."""
+def nearblocks_series(raw: dict) -> dict[str, dict[int, float]]:
+    """Daily chain statistics from a snapshot's NearBlocks files.
+
+    Snapshots up to 2026-11-19 hold /v1/charts (txn_fee and total_supply in yoctoNEAR).
+    Later ones hold the v3 split (block-, txn-, address-, price-stats), which differs in three ways:
+    txn_fee is in NEAR; there is no new_accounts (the series is left empty); there is no txn_fee_usd,
+    so fee_usd is txn_fee x that day's price (within 0.2% of v1's figure on overlapping days).
+    v3 active_accounts uses another definition than v1 and is not comparable with it.
+    """
     out: dict[str, dict[int, float]] = {k: {} for k in (
         "txns", "active_accounts", "new_accounts", "price", "market_cap", "fee_near", "fee_usd", "supply_near")}
-    for row in doc["charts"]:
+    if "nearblocks_charts" in raw:
+        for row in raw["nearblocks_charts"]["charts"]:
+            d = day_of(row["date"])
+            out["txns"][d] = float(row["txns"])
+            out["active_accounts"][d] = float(row["active_accounts"])
+            out["new_accounts"][d] = float(row["new_accounts"])
+            out["price"][d] = float(row["near_price"])
+            out["market_cap"][d] = float(row["market_cap"])
+            out["fee_near"][d] = int(row["txn_fee"].split(".")[0]) / YOCTO
+            out["fee_usd"][d] = float(row["txn_fee_usd"])
+            out["supply_near"][d] = int(row["total_supply"]) / YOCTO
+        return out
+    for row in raw["nearblocks_block_stats"]["data"]:
+        out["supply_near"][day_of(row["date"])] = int(row["total_supply"]) / YOCTO
+    for row in raw["nearblocks_txn_stats"]["data"]:
         d = day_of(row["date"])
         out["txns"][d] = float(row["txns"])
-        out["active_accounts"][d] = float(row["active_accounts"])
-        out["new_accounts"][d] = float(row["new_accounts"])
+        out["fee_near"][d] = float(row["txn_fee"])
+    for row in raw["nearblocks_address_stats"]["data"]:
+        out["active_accounts"][day_of(row["date"])] = float(row["active_accounts"])
+    for row in raw["nearblocks_price_stats"]["data"]:
+        if row["near_price"] is None:  # days before NEAR had a market price (v1 served 0 for them)
+            continue
+        d = day_of(row["date"])
         out["price"][d] = float(row["near_price"])
         out["market_cap"][d] = float(row["market_cap"])
-        out["fee_near"][d] = int(row["txn_fee"].split(".")[0]) / YOCTO
-        out["fee_usd"][d] = float(row["txn_fee_usd"])
-        out["supply_near"][d] = int(row["total_supply"]) / YOCTO
+    out["fee_usd"] = {d: f * out["price"][d] for d, f in out["fee_near"].items() if d in out["price"]}
     return out
 
 
@@ -111,7 +139,7 @@ def compute(raw: dict, asof: int | None = None) -> dict:
     vol = llama_series(raw["llama_intents_volume"])
     fees = llama_series(raw["llama_intents_fees"])
     rev = llama_series(raw["llama_intents_revenue"])
-    nb = nearblocks_series(raw["nearblocks_charts"])
+    nb = nearblocks_series(raw)
     dex = llama_series(raw["llama_near_dexs"])
     supply = raw["rpc_supply"]
     last = last_complete_day(vol, fees, rev, nb["txns"])
@@ -149,6 +177,8 @@ def compute(raw: dict, asof: int | None = None) -> dict:
     # --- Base layer activity (NearBlocks daily charts) ---
     for key, name in (("txns", "tx"), ("active_accounts", "active_accounts"), ("new_accounts", "new_accounts")):
         s = nb[key]
+        if not s:  # new_accounts: not served by NearBlocks v3
+            continue
         now30 = wavg(s, asof, 30)
         put(f"{name}_per_day_30d", now30, "per day", f"Mean daily {key}, 30 days to asof.")
         put(f"{name}_yoy_30d", pct_change(now30, wavg(s, asof - 365 * DAY, 30)), "%", f"30-day mean {key} vs the 30 days ending 365 days earlier.")

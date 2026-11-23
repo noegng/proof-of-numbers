@@ -28,7 +28,12 @@ HTTP_SOURCES = {
     "llama_intents_revenue": "https://api.llama.fi/summary/fees/near-intents?dataType=dailyRevenue",
     "llama_intents_holders_revenue": "https://api.llama.fi/summary/fees/near-intents?dataType=dailyHoldersRevenue",
     "llama_near_dexs": "https://api.llama.fi/overview/dexs/near?excludeTotalDataChartBreakdown=true",
-    "nearblocks_charts": "https://api.nearblocks.io/v1/charts",
+    # NearBlocks retired API v1 on 2026-11-22: /v1/charts (snapshots up to 2026-11-19) is split
+    # by metric in v3. v3 has no new_accounts and no txn_fee_usd (see metrics.nearblocks_series).
+    "nearblocks_block_stats": "https://api.nearblocks.io/v3/block-stats",
+    "nearblocks_txn_stats": "https://api.nearblocks.io/v3/txn-stats",
+    "nearblocks_address_stats": "https://api.nearblocks.io/v3/address-stats",
+    "nearblocks_price_stats": "https://api.nearblocks.io/v3/price-stats",
 }
 
 DAY = 86400

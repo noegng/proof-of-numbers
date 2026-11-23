@@ -36,6 +36,9 @@ class Windows(unittest.TestCase):
     def test_day_of_parses_nearblocks_dates(self):
         self.assertEqual(M.day_of("2026-11-10T00:00:00.000Z"), 1794268800)
 
+    def test_day_of_reads_a_bare_date_as_utc(self):
+        self.assertEqual(M.day_of("2026-11-10"), 1794268800)
+
     def test_supply_uses_integer_yocto(self):
         pts = [{"day": 0, "total_supply": str(3 * M.YOCTO + 1)}]
         self.assertAlmostEqual(M.supply_at(pts, 0), 3.0)
@@ -65,6 +68,28 @@ def synthetic_raw():
         "rpc_validators": {"result": {"current_validators": [{"stake": str(s * M.YOCTO)} for s in (300_000, 100_000, 100_000)]}},
         "rpc_protocol_config": {"result": {"max_inflation_rate": [1, 40], "protocol_version": 88}},
     }
+
+
+def synthetic_raw_v3():
+    """The same data as NearBlocks API v3 serves it (split by metric, txn_fee in NEAR, no new_accounts)."""
+    raw = synthetic_raw()
+    rows = raw.pop("nearblocks_charts")["charts"]
+    day = lambda r: r["date"][:10]
+    raw["nearblocks_block_stats"] = {"data": [{"date": day(r), "total_supply": r["total_supply"]} for r in rows]}
+    raw["nearblocks_txn_stats"] = {"data": [{"date": day(r), "txns": int(r["txns"]), "txn_fee": "10.0000000000000000"} for r in rows]}
+    raw["nearblocks_address_stats"] = {"data": [{"date": day(r), "active_accounts": 50} for r in rows]}
+    raw["nearblocks_price_stats"] = {"data": [{"date": day(r), "near_price": r["near_price"], "market_cap": r["market_cap"]} for r in rows]
+                                     + [{"date": "2020-07-21", "near_price": None, "market_cap": None}]}
+    return raw
+
+
+class ComputeV3(unittest.TestCase):
+    def test_v3_gives_the_v1_metrics_except_new_accounts(self):
+        v1 = {k: v["value"] for k, v in M.compute(synthetic_raw())["metrics"].items()}
+        v3 = {k: v["value"] for k, v in M.compute(synthetic_raw_v3())["metrics"].items()}
+        self.assertEqual(set(v1) - set(v3), {k for k in v1 if k.startswith("new_accounts_")})
+        for k in v3:
+            self.assertAlmostEqual(v1[k], v3[k], msg=k)
 
 
 class Compute(unittest.TestCase):

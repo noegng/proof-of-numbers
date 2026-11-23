@@ -28,7 +28,7 @@ class Snapshot(unittest.TestCase):
         """Two independent readings of total supply (archival RPC, NearBlocks) agree within 0.001%."""
         for snap in SNAPSHOTS:
             raw = build.load_raw(snap)
-            nb = M.nearblocks_series(raw["nearblocks_charts"])["supply_near"]
+            nb = M.nearblocks_series(raw)["supply_near"]
             checked = 0
             for p in raw["rpc_supply"]:
                 # NearBlocks stamps a day with its end-of-day supply; RPC reads the first block of the next day.
