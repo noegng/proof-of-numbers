@@ -10,6 +10,8 @@ treats those numbers as evidence: it records each one with its source, recompute
 and shows where the teams agree, where they differ, and which definition explains the difference. The
 thesis is then built only on numbers that replicate, and its conditions run as code.
 
+[![The results page: 59 teams measured NEAR. Do their numbers agree?](.github/screenshots/hero.jpg)](https://noegng.github.io/proof-of-numbers/)
+
 ## What it found
 
 367 numbers published by 59 teams were recomputed from raw data, each for the day it was published: 317 are
@@ -29,6 +31,11 @@ a correct 30-day number drifts as the window moves on. Team by team: <https://no
    10 Nov, the day before, is $5.96M (9% higher), and no 30-day window ending between 27 Oct and 10 Nov comes
    within 5% (closest: $5.78M, ending 8 Nov). Nine other teams' fee totals are within 5% of ours on their own
    publication days.
+
+<table><tr>
+<td width="50%"><a href="https://noegng.github.io/proof-of-numbers/#teams"><img src=".github/screenshots/teams.jpg" alt="Team by team: each published number, reproduced within 5%, within 15% or not"></a><br><sub>Team by team: every published number, recomputed.</sub></td>
+<td width="50%"><a href="https://noegng.github.io/proof-of-numbers/#tests"><img src=".github/screenshots/tests.jpg" alt="Five kill switches and four dated predictions, re-checked every day"></a><br><sub>The thesis's kill switches, re-checked every day.</sub></td>
+</tr></table>
 
 ## Try it
 
