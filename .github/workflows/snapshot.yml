@@ -3,7 +3,11 @@ on:
   schedule:
     # 15:00 UTC: the 2026-11-11 snapshot was taken at 14:22 UTC and its newest day was already final;
     # a fetch at 07:38 UTC (2026-11-12) got a newest day DefiLlama had not finished filling.
+    # GitHub can start a scheduled run hours late (2026-11-23's 15:00 run started at 02:00 UTC the next
+    # day, when DefiLlama's series and its own total30d disagreed by one day). The second cron retries a day
+    # whose first run failed or never came; runs before 12:00 UTC are skipped.
     - cron: "0 15 * * *"
+    - cron: "0 19 * * *"
   workflow_dispatch:
 permissions:
   contents: write
@@ -19,7 +23,10 @@ jobs:
       - name: Fetch raw public data (no API key), at most once per UTC day
         id: fetch
         run: |
-          if [ -d "data/raw/$(date -u +%F)" ]; then
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u +%-H)" -lt 12 ]; then
+            echo "::notice::$(date -u +%H:%M) UTC is too early: the sources have not finished the previous day"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          elif [ -d "data/raw/$(date -u +%F)" ]; then
             echo "data/raw/$(date -u +%F) is already committed; a committed snapshot is never overwritten"
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
