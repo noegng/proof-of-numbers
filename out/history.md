@@ -1,6 +1,6 @@
 # Snapshot history
 
-Raw snapshots committed: 12. THESIS.md is written from `2026-11-13`;
+Raw snapshots committed: 13. THESIS.md is written from `2026-11-13`;
 the conditions under which it is dropped are evaluated again on every later snapshot.
 
 | Snapshot | Data to | Intents volume 30 d | Fees 30 d | Captured 30 d | Cover of net issuance 90 d | Wallets / reported 90 d | Tx per day | Price | Kill conditions | Predictions |
@@ -17,6 +17,7 @@ the conditions under which it is dropped are evaluated again on every later snap
 | 2026-11-20 | 2026-11-19 | $3.903B | $6.829M | $1.651M | 18.2% | 0.98x | 685,545 | $3.30 | all 5 hold | P1 pending, P2 pending, P3 pending, P4 pending |
 | 2026-11-21 | 2026-11-20 | $3.985B | $7.160M | $1.690M | 18.3% | 0.99x | 689,538 | $3.21 | all 5 hold | P1 pending, P2 pending, P3 pending, P4 pending |
 | 2026-11-24 | 2026-11-23 | $4.214B | $7.704M | $1.713M | 18.5% | 0.99x | 698,326 | $2.98 | all 5 hold | P1 pending, P2 pending, P3 pending, P4 pending |
+| 2026-11-25 | 2026-11-24 | $4.277B | $7.875M | $1.707M | 18.5% | 0.99x | 701,793 | $2.99 | all 5 hold | P1 pending, P2 pending, P3 pending, P4 pending |
 
 ## Past values changed by the source between snapshots
 
@@ -57,3 +58,6 @@ Days present in both snapshots whose value differs. A thesis that quotes a 30-da
 | 2026-11-21 | 2026-11-24 | llama_intents_volume | 711 | 4 | $38.798B | $38.848B | 2026-11-20: 233,166,271 to 250,460,870; 2026-11-17: 121,102,378 to 133,725,120; 2026-11-18: 119,288,544 to 129,911,503; 2026-11-19: 120,825,105 to 130,280,163 |
 | 2026-11-21 | 2026-11-24 | llama_intents_fees | 560 | 2 | $63.451M | $63.452M | 2026-11-20: 545,978 to 546,713; 2026-11-19: 179,153 to 179,358 |
 | 2026-11-21 | 2026-11-24 | llama_intents_revenue | 560 | 1 | $10.339M | $10.339M | 2026-11-20: 99,894 to 100,134 |
+| 2026-11-24 | 2026-11-25 | llama_intents_volume | 714 | 0 | $39.341B | $39.341B | none |
+| 2026-11-24 | 2026-11-25 | llama_intents_fees | 563 | 1 | $64.468M | $64.469M | 2026-11-23: 397,919 to 398,165 |
+| 2026-11-24 | 2026-11-25 | llama_intents_revenue | 563 | 1 | $10.506M | $10.510M | 2026-11-23: 80,195 to 83,371 |
