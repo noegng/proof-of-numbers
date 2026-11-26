@@ -312,6 +312,30 @@
     "P3": "PENDING",
     "P4": "PENDING"
    }
+  },
+  {
+   "snapshot": "2026-11-26",
+   "asof": "2026-11-25",
+   "metrics": {
+    "intents_volume_30d": 4305242131.0,
+    "intents_fees_30d": 7995583.0,
+    "intents_revenue_30d": 1701762.0,
+    "wallet_growth_cover_of_net_issuance_pct_90d": 18.54784974647405,
+    "wallet_growth_over_defillama_revenue_90d": 0.9858305146781022,
+    "tx_per_day_30d": 705631.8,
+    "price_usd": 2.88600469
+   },
+   "checks": {
+    "K1": "HOLDS",
+    "K2": "HOLDS",
+    "K3": "HOLDS",
+    "K4": "HOLDS",
+    "K5": "HOLDS",
+    "P1": "PENDING",
+    "P2": "PENDING",
+    "P3": "PENDING",
+    "P4": "PENDING"
+   }
   }
  ],
  "restatements": [
@@ -855,6 +879,53 @@
      "day": "2026-11-23",
      "old": 80195.0,
      "new": 83371.0
+    }
+   ]
+  },
+  {
+   "older": "2026-11-25",
+   "newer": "2026-11-26",
+   "series": "llama_intents_volume",
+   "days_compared": 715,
+   "days_changed": 0,
+   "sum_old": 39493052588.0,
+   "sum_new": 39493052588.0,
+   "largest": []
+  },
+  {
+   "older": "2026-11-25",
+   "newer": "2026-11-26",
+   "series": "llama_intents_fees",
+   "days_compared": 564,
+   "days_changed": 1,
+   "sum_old": 64766468.98,
+   "sum_new": 64766265.98,
+   "largest": [
+    {
+     "day": "2026-11-24",
+     "old": 297739.0,
+     "new": 297536.0
+    }
+   ]
+  },
+  {
+   "older": "2026-11-25",
+   "newer": "2026-11-26",
+   "series": "llama_intents_revenue",
+   "days_compared": 564,
+   "days_changed": 2,
+   "sum_old": 10561774.05,
+   "sum_new": 10563138.05,
+   "largest": [
+    {
+     "day": "2026-11-24",
+     "old": 52145.0,
+     "new": 53523.0
+    },
+    {
+     "day": "2026-11-19",
+     "old": 37940.0,
+     "new": 37926.0
     }
    ]
   }
